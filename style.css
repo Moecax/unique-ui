@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'open-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('open-sans-v34-latin/open-sans-v34-latin-regular.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open-sans', sans-serif;
+}
+
+html, body, .main-container, .container {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+  transition: all 0.4s;
+  z-index: 15;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+img {
+  width: 50%;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  padding: 2em 4em;
+  z-index: 12;
+}
+
+.main-nav .ul-second {
+  position: fixed;
+  display: flex;
+  right: 4em;
+}
+
+.main-nav .ul-second li {
+  margin-left: 1.5em;
+}
+
+.main-nav .ul-second #border {
+  border: 1px solid black;
+  padding: 0px 15px;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid black;
+  padding: 0px 15px;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ecf0f1;
+  letter-spacing: 5px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scaleX(0.97);
+  background-color: #95a5a6;
+}
+
+.container {
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .summer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.container .summer img {
+  width: 400px;
+  height: 600px;
+}
+
+.content {
+  margin-top: 50px;
+  margin-right: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+.container .winter {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.container .winter img {
+  width: 400px;
+  height: 600px;
+}
+
+.container .spring {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.container .spring img {
+  width: 400px;
+  height: 600px;
+}
+
+.container .autumn {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.container .autumn img {
+  width: 400px;
+  height: 600px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
