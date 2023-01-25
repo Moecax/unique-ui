@@ -1,18 +1,21 @@
 @font-face {
-  font-family: 'open-sans';
+  font-family: "open-sans";
   font-style: normal;
   font-weight: 400;
-  src: url('open-sans-v34-latin/open-sans-v34-latin-regular.woff');
+  src: url("open-sans-v34-latin/open-sans-v34-latin-regular.woff");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'open-sans', sans-serif;
+  font-family: "open-sans", sans-serif;
 }
 
-html, body, .main-container, .container {
+html,
+body,
+.main-container,
+.container {
   scroll-behavior: smooth;
 }
 
@@ -109,6 +112,8 @@ section {
   width: 400vw;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  animation: rise 1s ease;
 }
 
 .container .summer {
@@ -172,4 +177,14 @@ section {
 
 ::-webkit-scrollbar {
   display: none;
+}
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
